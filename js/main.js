@@ -92,7 +92,22 @@ const totalcarrito = () => {
     return sumaCarro
 }
 
+const eliminarProducto = () => {
+    productoEliminar = prompt("Si desea eliminar un productos por favor indiquelo con el numero. \n\n 1- Paleta bullpadel  Naranja. \n 2- Paleta Bullpadel Azul. \n 3- Paleta Bullpadel Negra. \n 4- Grip Generico.\n 5- Grip Intermedio. \n 6- Grip Profesional.\n 7- Grip Profesional. \n 8- Tubo x 3 Pelotas Head \n ")
 
+    let num = 0;
+    productos.forEach((producto) => {
+
+        if (producto.id == productoEliminar) {
+            productos.splice(num, 1);
+            num += 1;
+        } else {
+            num += 1;
+        }
+        alert ("Su total actualizado es de $ " + totalcarrito())
+    })
+}
 
 cliente();
 agregarCarrito();
+eliminarProducto();
