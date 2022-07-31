@@ -51,26 +51,17 @@ footer {
         align-items: center;
         text-align: center; } }
 
-table {
-  box-shadow: grey 0.3rem 0.3rem 0.1rem 0.2rem;
-  /* margin: 40px; */ }
 
-.cajaindex2 .containercard .card {
+
+/* .cajaindex2 .containercard .card {
   border: 4px solid #135fcc;
   border-top-left-radius: 20px;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 50px;
   border-bottom-left-radius: 30px;
   box-shadow: grey 0.3rem 0.3rem 0.1rem 0.2rem; }
+ */
 
-.cajaindex2 p {
-  font-size: 16px; }
-  @media screen and (min-width: 768px) {
-    .cajaindex2 p {
-      font-size: 17px; } }
-  @media screen and (min-width: 1024px) {
-    .cajaindex2 p {
-      font-size: 20px; } }
 
 .cajaSlidefijo {
   height: 15em;
@@ -88,21 +79,6 @@ table {
     font-size: 40px;
     font-weight: bold; }
 
-.fondosponsor {
-  background-color: #135fcc; }
-  .fondosponsor img {
-    margin: 5px; }
-    .fondosponsor img:hover {
-      border-radius: 20%;
-      -webkit-border-radius: 20%;
-      box-shadow: 0px 0px 15px 15px red;
-      -webkit-box-shadow: 0px 0px 15px 15px red; }
-  .fondosponsor h2, .fondosponsor h3 {
-    color: #fff;
-    text-decoration: underline;
-    letter-spacing: 5px;
-    margin: 50px; }
-
 * {
   margin: 0px;
   padding: 0px;
@@ -112,20 +88,6 @@ body {
   font-family: BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   overflow-x: hidden; }
 
-.contenedorCarousel {
-  width: 100%;
-  padding: 30px;
-  text-align: center; }
-  .contenedorCarousel .carouselimg {
-    height: 30vh;
-    box-shadow: grey 0.3rem 0.3rem 0.1rem 0.2rem; }
-    @media screen and (min-width: 768px) {
-      .contenedorCarousel .carouselimg {
-        height: 50vw; } }
-    @media screen and (min-width: 1024px) {
-      .contenedorCarousel .carouselimg {
-        height: 50vw;
-        max-height: 500px; } }
 
 .titulos, main h2, main h3 {
   margin: 3em;
@@ -146,103 +108,47 @@ main {
   justify-content: center;
   align-items: center;
   text-align: center; }
-  main .quienesSomos {
-    margin: .5em;
-    padding: .5em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-    main .quienesSomos iframe {
-      width: 32rem;
-      height: 21rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding: 8px; }
-    main .quienesSomos div {
-      margin: .5em;
-      padding: .5em;
-      text-align: center;
-      width: 90vw; }
+  
   main h2 {
     font-size: 30px;
     font-weight: bold; }
   main h3 {
     font-size: 25px;
     font-weight: bold; }
-  main .video {
-    width: 390px;
-    height: 380px; }
-    @media screen and (min-width: 768px) {
-      main .video {
-        width: 600px;
-        height: 350px; } }
-    @media screen and (min-width: 1024px) {
-      main .video {
-        width: 659px;
-        height: 550px; } }
-  main .textoquienes {
-    text-align: justify;
-    font-size: 16px; }
-    main .textoquienes span {
-      letter-spacing: 2px;
-      font-size: 20px;
-      font-weight: bold; }
-      @media screen and (min-width: 1024px) {
-        main .textoquienes span {
-          font-size: 30px; } }
-    @media screen and (min-width: 768px) {
-      main .textoquienes {
-        font-size: 17px; } }
-    @media screen and (min-width: 1024px) {
-      main .textoquienes {
-        font-size: 16px;
-        padding: 30px 20px; } }
+ 
 
-.cajaindex2 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 70px; }
-  .cajaindex2 p {
-    color: #000;
-    text-align: justify;
-    max-width: 900px;
-    margin-bottom: 30px; }
-  .cajaindex2 tr th,
-  .cajaindex2 td {
-    border-bottom: solid 5px black;
-    text-shadow: .4rem;
-    border: #313331 1px solid; }
-  .cajaindex2 #tituloTabla {
-    background-color: #135fcc;
-    color: white; }
-  .cajaindex2 tr:nth-child(even) {
-    background-color: #ddd; }
 
-@media screen and (max-width: 720px) {
-  .contenedorCard {
-    display: none; } }
-
-.contenedorCard .card {
-  border: 4px solid #135fcc;
-  border-top-left-radius: 20px;
+.card {
+  border: 3px solid #135fcc;
+  border-top-left-radius: 1px;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 50px;
   border-bottom-left-radius: 30px;
-  box-shadow: grey 0.3rem 0.3rem 0.1rem 0.2rem; }
+  box-shadow: grey 0.3rem 0.3rem 0.1rem 0.2rem;
+height: 100% }
+  
 
-.comollegar .mapacaja {
-  box-shadow: grey .2rem .2rem .1rem .2rem;
-  margin: 20px;
-  border: black solid 1px; }
-  .comollegar .mapacaja .mapa {
-    width: 60vw;
-    height: 300px;
-    max-width: 700px; }
 
-.menuPromos {
-  background-color: #135fcc; }
+.contenedorProductos{
+  height: 90%;
+  width: 90%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction:row;
+}
+.container_pala{
+  display: flex;
+  flex-wrap: inherit;
+}
+
+.cointeiner_grip{
+  display: flex;
+  flex-wrap: inherit;
+}
+
+.cointeiner_bolas{
+  display: flex;
+  flex-wrap: inherit;
+  
+}
