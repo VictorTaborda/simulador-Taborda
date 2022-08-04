@@ -49,6 +49,7 @@
                         <li class="nav-item">
                             <a class="nav-link" style="color:white" href="#">Contacto</a>
                         </li>
+
                     </ul>
 
                 </div>
@@ -59,35 +60,34 @@
         <div class="cajaSlidefijo">
             <h2 id="tituloh2" class="animate__animated animate__bounceIn ">TIENDA</h2>
         </div>
-        <h2>PRODUCTOS</h2>
-        <div class="contenedorProductos">
+        <div class="">
             <section>
-                <div >
-                    <section>
-                        <article>
-                            <div>
-                                <h2>- PALAS -</h2>
-                                <div class="container_pala">
-                                </div>
-                        </article>
-                    </section>
-                    <section>
-                        <article >
-                            <h2>- GRIPS -</h2>
-                            <div class="cointeiner_grip">
-                            </div>
-                        </article>
-                    </section>
-                    <section>
-                        <article>
-                            <h2>- PELOTAS -</h2>
-                            <div class="cointeiner_bolas">
-                            </div>
-                        </article>
-                    </section>
-                </div>
+                <h2>- PRODUCTOS -</h2>
+                <section id="container_productos">
+                </section>
             </section>
         </div>
+        <section>
+            <div class="modal-cointeiner" id="modal_cointeiner">
+                <div class="modal-carrito">
+                    <h3>TU COMPRA</h3>
+                    <table class="table">
+
+                        <tr>
+                            <th id="tituloTabla" scope="col">CANTIDAD</th>
+                            <th id="tituloTabla" scope="col">PRODUCTO</th>
+                            <th id="tituloTabla" scope="col">ID</th>
+                            <th id="tituloTabla" scope="col">PRECIO</th>
+                            
+                        </tr>
+                        <tbody>
+                            <tr id="carrito-contenedor"> </tr>
+                            <td ><strong> SUMA CARRITO $ <span id ="precioTotal"></span> </strong></td>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
         <div>
@@ -113,3 +113,4 @@
 </body>
 
 </html>
+
