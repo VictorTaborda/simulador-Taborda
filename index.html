@@ -51,7 +51,8 @@
                         </li>
 
                     </ul>
-
+                    <button id="boton-carrito"><i class="fas fa-shopping-cart"></i><span
+                            id="contador">0</span></button>
                 </div>
             </div>
         </nav>
@@ -67,27 +68,17 @@
                 </section>
             </section>
         </div>
-        <section>
-            <div class="modal-cointeiner" id="modal_cointeiner">
-                <div class="modal-carrito">
-                    <h3>TU COMPRA</h3>
-                    <table class="table">
+        <div class="modal-contenedor">
+            <div class="modal-carrito">
+                <h3>TU COMPRA</h3>
+                <button id="carritoCerrar"><i class="fas fa-times-circle"></i></button>
+                <div id="carrito-contenedor">
 
-                        <tr>
-                            <th id="tituloTabla" scope="col">CANTIDAD</th>
-                            <th id="tituloTabla" scope="col">PRODUCTO</th>
-                            <th id="tituloTabla" scope="col">ID</th>
-                            <th id="tituloTabla" scope="col">PRECIO</th>
-                            
-                        </tr>
-                        <tbody>
-                            <tr id="carrito-contenedor"> </tr>
-                            <td ><strong> SUMA CARRITO $ <span id ="precioTotal"></span> </strong></td>
-                        </tbody>
-                    </table>
                 </div>
+                <p class="precioProducto">Precio total: $<span id="precioTotal">0</span></p>
+                <button id="eliminar-carrito" class="boton-agregar">ELIMINAR COMPRA</button>
             </div>
-        </section>
+        </div>
     </main>
     <footer>
         <div>
@@ -113,4 +104,3 @@
 </body>
 
 </html>
-
