@@ -29,13 +29,12 @@ const botonCerrar = document.getElementById('carritoCerrar')
 const modalCarrito = document.getElementsByClassName('modal-carrito')[0]
 let carrito = []
 document.addEventListener('DOMContentLoaded', () => {
-    if (localStorage.getItem('carrito')) {
-        carrito = JSON.parse(localStorage.getItem('carrito'))
-        actualizarCarrito()
-    }
+    localStorage.getItem('carrito') && (carrito = JSON.parse(localStorage.getItem('carrito')))
+    actualizarCarrito()
 })
 botonEliminarCompra.addEventListener('click',()=>{
     carrito.length=0;
+    carrito.length=== 0 && alert ('eliminaste todos los productos')
     actualizarCarrito()
 })
 
@@ -67,17 +66,10 @@ const agregarAlCarrito = (prodId) => {
     const existe =carrito.some(producto=>producto.id ===prodId)
 
     if(existe){
-        const producto = carrito.map(producto=>{
-            if (producto.id ===prodId){
-                producto.cantidad++
-            }
-        })
+        const producto = carrito.map(producto=>{producto.id ===prodId && producto.cantidad++})
     }else{
-
     const item = productos.find((producto)=> producto.id == prodId);
     carrito.push(item);
-
-    
 }
 actualizarCarrito()
 }
