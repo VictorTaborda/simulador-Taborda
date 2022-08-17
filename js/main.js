@@ -34,7 +34,15 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 botonEliminarCompra.addEventListener('click',()=>{
     carrito.length=0;
-    carrito.length=== 0 && alert ('eliminaste todos los productos')
+    carrito.length=== 0 && Swal.fire(
+        {
+            title:'ATENCION!!!',
+            text:'Quitaste todos los productos del carrito',
+            icon:'error',
+            backdrop:'#135fccaa',
+        }
+    )
+    
     actualizarCarrito()
 })
 
@@ -67,9 +75,21 @@ const agregarAlCarrito = (prodId) => {
 
     if(existe){
         const producto = carrito.map(producto=>{producto.id ===prodId && producto.cantidad++})
+        Toastify({
+            text:"AGREGASTE EL PRODUCTO AL CARRITO",
+            duration:2000,
+            backgroundColor:"green"
+        }).showToast()
+        
+
     }else{
     const item = productos.find((producto)=> producto.id == prodId);
     carrito.push(item);
+    Toastify({
+        text:"AGREGASTE EL PRODUCTO AL CARRITO",
+        duration:2000,
+        backgroundColor:"green"
+    }).showToast()
 }
 actualizarCarrito()
 }
@@ -94,8 +114,7 @@ const actualizarCarrito = () => {
                 <td><strong>$ ${producto.precio}</strong></td>
                 <button onclick="eliminarDelCarrito(${producto.id})" ><img src="./img/eliminar.JPG" style="max-height: 23px" alt=""></button>`
         contenedorCarrito.appendChild(div)
-
-
+        
         localStorage.setItem('carrito', JSON.stringify(carrito))
 
     })
